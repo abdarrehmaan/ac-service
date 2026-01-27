@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Fast microwave repair service. All microwave brands serviced. Heating issues, turntable problems, and door repairs. Affordable pricing.">
+    <meta name="keywords" content="microwave repair, microwave service, appliance repair, kitchen appliance">
+    <title>Microwave Repair Service | HomeFix Pro - Quick & Affordable Fixes</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🔧 HomeFix Pro</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><button class="btn btn-primary" id="bookNowHeader">Book Now</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height: 400px;">
+        <div class="container">
+            <div class="hero-content animate-slide-up text-center" style="max-width: 100%;">
+                <div class="badge badge-primary mb-4" style="font-size: 48px;">🍕</div>
+                <h1>Microwave Repair Service</h1>
+                <p class="text-xl">Fast microwave repairs to get your kitchen back to working order.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" id="bookNowHero">Book Service Now</button>
+                    <a href="tel:+917311100318" class="btn btn-accent btn-lg">📞 Call: +91 7311100318</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <img src="C:/Users/pc/.gemini/antigravity/brain/763925ee-16aa-40b6-86f3-32ce400bda9a/service_microwave_1769161568706.png"
+                alt="Microwave Repair Service"
+                style="width: 100%; max-width: 1000px; margin: 0 auto; border-radius: 16px; box-shadow: var(--shadow-xl);">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>Common Microwave Issues</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3 class="mb-4">🔥 Not Heating</h3>
+                    <p>Microwave runs but doesn't heat? We repair magnetrons and high voltage systems.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">🌀 Turntable Issues</h3>
+                    <p>Plate not spinning? We fix motors, couplers, and turntable mechanisms.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">🚪 Door Problems</h3>
+                    <p>Door won't close or latch broken? We replace hinges and latch assemblies.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">💡 Light Not Working</h3>
+                    <p>Interior light out? We replace bulbs and fix electrical connections.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">⚡ Sparking Inside</h3>
+                    <p>Seeing sparks? We repair waveguide covers and internal components.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">🔘 Control Panel</h3>
+                    <p>Buttons not working? We repair or replace control boards and switches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <div class="container text-center">
+            <h2 class="mb-6">Fast Microwave Repair</h2>
+            <p class="text-xl mb-8">Affordable pricing • Quick turnaround • Quality parts</p>
+            <button class="btn btn-primary btn-lg" id="bookNowFooter">Book Service Now</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 HomeFix Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 class="mb-6">Book Microwave Repair</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label class="form-label">Your Name *</label>
+                    <input type="text" class="form-input" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Phone *</label>
+                    <input type="tel" class="form-input" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email *</label>
+                    <input type="email" class="form-input" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Preferred Date *</label>
+                    <input type="date" class="form-input" id="date" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-textarea" id="message" placeholder="Describe the issue..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Booking</button>
+            </form>
+            <div class="text-center mt-6" id="successMessage" style="display: none;">
+                <div style="font-size: 64px;">✅</div>
+                <h3>Booking Received!</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

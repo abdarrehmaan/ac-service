@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional AC repair and installation services. Expert technicians for all AC brands. Same-day service, 90-day warranty. Cool comfort guaranteed.">
+    <meta name="keywords"
+        content="AC repair, air conditioner repair, AC installation, HVAC service, cooling repair, AC maintenance">
+    <title>AC Repair & Installation Services | HomeFix Pro - Same-Day Service</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🔧 HomeFix Pro</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="index.html#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><button class="btn btn-primary" id="bookNowHeader">Book Now</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Service Hero -->
+    <section class="hero" style="min-height: 400px;">
+        <div class="container">
+            <div class="hero-content animate-slide-up text-center" style="max-width: 100%;">
+                <div class="badge badge-primary mb-4" style="font-size: 48px;">❄️</div>
+                <h1>AC Repair & Installation</h1>
+                <p class="text-xl">Expert cooling solutions for your home. Fast, reliable, and affordable AC services.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" id="bookNowHero">Book Service Now</button>
+                    <a href="tel:+917311100318" class="btn btn-accent btn-lg">📞 Call: +91 7311100318</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Image -->
+    <section class="section">
+        <div class="container">
+            <img src="https://image.pollinations.ai/prompt/professional%20ac%20repair%20technician%20working%20on%20split%20unit?width=1000&height=600&nologo=true"
+                alt="Professional AC Repair Service"
+                style="width: 100%; max-width: 1000px; margin: 0 auto; border-radius: 16px; box-shadow: var(--shadow-xl);">
+        </div>
+    </section>
+
+    <!-- AC Service Packages & Pricing -->
+    <section class="section" style="background: var(--color-bg-light-secondary);">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>Our AC Services & Pricing</h2>
+                <p class="text-xl" style="color: var(--color-text-muted);">Transparent pricing for all AC services</p>
+            </div>
+
+            <div class="grid grid-3">
+                <!-- Repair Service (Window AC) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/repairing%20window%20air%20conditioner%20unit?width=400&height=300&nologo=true"
+                        alt="Window AC Repair" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Repair Service (Window AC)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹499</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹599</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0; color: var(--color-text-dark);">
+                        <li class="mb-2">✓ Checks the elements properly</li>
+                        <li class="mb-2">✓ Checks all the wears and tears of the wires</li>
+                        <li class="mb-2">✓ Checks the performance of the air conditioner</li>
+                        <li class="mb-2">✓ Troubleshoots the problem in an efficient manner</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Repair Service (Split AC) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/technician%20fixing%20split%20ac%20indoor%20unit?width=400&height=300&nologo=true"
+                        alt="Split AC Repair" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Repair Service (Split AC)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹599</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹699</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Checks the elements properly</li>
+                        <li class="mb-2">✓ Checks all the wears and tears of the wires</li>
+                        <li class="mb-2">✓ Checks the performance of the air conditioner</li>
+                        <li class="mb-2">✓ Troubleshoots the problem in an efficient manner</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Installation (Window AC) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/installing%20window%20ac%20unit%20in%20frame?width=400&height=300&nologo=true"
+                        alt="Window AC Installation" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Installation (Window AC)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹999</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹1099</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Include Fixing of AC stand in Windows</li>
+                        <li class="mb-2">✓ Connect inlet AC assembly to Air Conditioner</li>
+                        <li class="mb-2">✓ Connect electricity supply to Air Conditioner</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Installation (Split AC) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/mounting%20new%20split%20ac%20on%20wall?width=400&height=300&nologo=true"
+                        alt="Split AC Installation" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Installation (Split AC)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹1449</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹1549</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Include Fixing of AC stand in Windows</li>
+                        <li class="mb-2">✓ Connect inlet AC assembly to Air Conditioner</li>
+                        <li class="mb-2">✓ Connect electricity supply to Air Conditioner</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Uninstallation (Window AC) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/removing%20old%20window%20ac%20unit?width=400&height=300&nologo=true"
+                        alt="Window AC Uninstallation" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Uninstallation (Window AC)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹649</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹749</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Dismantle of Air Conditioner from the Window</li>
+                        <li class="mb-2">✓ Dismantle of inlet Ac assembly from Air Conditioner</li>
+                        <li class="mb-2">✓ Disconnect electricity supply to Air Conditioner</li>
+                        <li class="mb-2">✓ Packing Air Conditioner at a place</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Uninstallation (Split AC) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/uninstalling%20split%20ac%20unit%20technician?width=400&height=300&nologo=true"
+                        alt="Split AC Uninstallation" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Uninstallation (Split AC)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹849</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹949</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Dismantle of AC stand from Windows</li>
+                        <li class="mb-2">✓ Dismantle/Fixed Front air grill</li>
+                        <li class="mb-2">✓ Disconnect electricity supply to Air Conditioner</li>
+                        <li class="mb-2">✓ Packing Air Conditioner at a place</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Gas Filling (Window AC) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/technician%20filling%20gas%20in%20window%20ac?width=400&height=300&nologo=true"
+                        alt="Window AC Gas Filling" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Gas Filling (Window AC)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹2499</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹2599</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ First, check the compressor</li>
+                        <li class="mb-2">✓ Connect valve on the compressor process tube</li>
+                        <li class="mb-2">✓ Fill Gas according to air conditioner</li>
+                        <li class="mb-2">✓ Check leakage after refill gas</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Gas Filling (Split AC 1.0 Ton) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/technician%20checking%20gas%20pressure%20split%20ac?width=400&height=300&nologo=true"
+                        alt="Split AC Gas Filling 1.0 Ton" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Gas Filling (Split AC 1.0 Ton)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹2499</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹2599</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ First, check the compressor</li>
+                        <li class="mb-2">✓ Connect valve on the compressor process tube</li>
+                        <li class="mb-2">✓ Fill Gas according to air conditioner</li>
+                        <li class="mb-2">✓ Check leakage after refill gas</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Gas Filling (Split AC 1.5 Ton) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/technician%20checking%20gas%20pressure%20split%20ac?width=400&height=300&nologo=true"
+                        alt="Split AC Gas Filling 1.5 Ton" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Gas Filling (Split AC 1.5 Ton)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹2499</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹2599</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ First, check the compressor</li>
+                        <li class="mb-2">✓ Connect valve on the compressor process tube</li>
+                        <li class="mb-2">✓ Fill Gas according to air conditioner</li>
+                        <li class="mb-2">✓ Check leakage after refill gas</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Gas Filling (Split AC 2.0 Ton) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/technician%20checking%20gas%20pressure%20split%20ac?width=400&height=300&nologo=true"
+                        alt="Split AC Gas Filling 2.0 Ton" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Gas Filling (Split AC 2.0 Ton)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹2499</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹2599</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ First, check the compressor</li>
+                        <li class="mb-2">✓ Connect valve on the compressor process tube</li>
+                        <li class="mb-2">✓ Fill Gas according to air conditioner</li>
+                        <li class="mb-2">✓ Check leakage after refill gas</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Foam-jet service (1 AC) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/cleaning%20ac%20coil%20with%20foam%20jet%20spray?width=400&height=300&nologo=true"
+                        alt="Foam Jet Service 1 AC" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Foam-jet Service (1 AC)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹599</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹699</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Applicable for both window or split AC</li>
+                        <li class="mb-2">✓ Indoor unit deep cleaning with foam & jet spray</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Foam-jet service (2 ACs) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/cleaning%20ac%20coil%20with%20foam%20jet%20spray?width=400&height=300&nologo=true"
+                        alt="Foam Jet Service 2 ACs" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Foam-jet Service (2 ACs)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹1099</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹1199</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Applicable for both window or split ACs</li>
+                        <li class="mb-2">✓ Indoor unit deep cleaning with foam & jet spray</li>
+                        <li class="mb-2">✓ Jet-spray cleaning of outer unit</li>
+                        <li class="mb-2">✓ Final checks & post-service cleaning</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Foam-jet service (3 ACs) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/cleaning%20outdoor%20ac%20unit%20with%20water%20jet?width=400&height=300&nologo=true"
+                        alt="Foam Jet Service 3 ACs" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Foam-jet Service (3 ACs)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹1497</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹1597</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Applicable for both window & split ACs</li>
+                        <li class="mb-2">✓ Advanced Foam-jet cleaning of indoor unit</li>
+                        <li class="mb-2">✓ Jet-spray cleaning of outer unit</li>
+                        <li class="mb-2">✓ Final checks & post-service cleaning</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Foam-jet service (4 ACs) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/cleaning%20outdoor%20ac%20unit%20with%20water%20jet?width=400&height=300&nologo=true"
+                        alt="Foam Jet Service 4 ACs" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Foam-jet Service (4 ACs)</h3>
+                    </div>
+                    <div class="rating mb-3 " style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹1996</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹2096</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Applicable for both window & split ACs</li>
+                        <li class="mb-2">✓ Advanced Foam-jet cleaning of indoor unit</li>
+                        <li class="mb-2">✓ Jet-spray cleaning of outer unit</li>
+                        <li class="mb-2">✓ Final checks & post-service cleaning</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+
+                <!-- Foam-jet service (5 ACs) -->
+                <div class="card">
+                    <img src="https://image.pollinations.ai/prompt/cleaning%20outdoor%20ac%20unit%20with%20water%20jet?width=400&height=300&nologo=true"
+                        alt="Foam Jet Service 5 ACs" class="service-card-img"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
+                    <div class="flex-between mb-3">
+                        <h3 style="font-size: var(--text-xl); margin: 0;">Foam-jet Service (5 ACs)</h3>
+                    </div>
+                    <div class="rating mb-3" style="font-size: 14px;">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span style="opacity: 0.5;">⭐</span>
+                        <span style="margin-left: 8px; color: var(--color-text-muted);">4.5 (30K+ reviews)</span>
+                    </div>
+                    <div class="mb-4">
+                        <span
+                            style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-primary);">₹2495</span>
+                        <span
+                            style="text-decoration: line-through; color: var(--color-text-muted); margin-left: 12px; font-size: var(--text-lg);">₹2595</span>
+                    </div>
+                    <ul class="mb-6" style="list-style: none; padding-left: 0;">
+                        <li class="mb-2">✓ Applicable for both window & split ACs</li>
+                        <li class="mb-2">✓ Advanced Foam-jet cleaning of indoor unit</li>
+                        <li class="mb-2">✓ Jet-spray cleaning of outer unit</li>
+                        <li class="mb-2">✓ Final checks & post-service cleaning</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="document.getElementById('bookingModal').classList.add('show')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>Common AC Problems We Fix</h2>
+                <p class="text-xl">Expert solutions for all AC issues</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card-glass">
+                    <h3 class="mb-4">🌡️ Not Cooling</h3>
+                    <p>AC running but not cooling? We fix refrigerant leaks, compressor issues, and airflow problems.
+                    </p>
+                </div>
+
+                <div class="card-glass">
+                    <h3 class="mb-4">🔇 Strange Noises</h3>
+                    <p>Grinding, squealing, or rattling sounds? We repair fan motors, belts, and loose components.</p>
+                </div>
+
+                <div class="card-glass">
+                    <h3 class="mb-4">💧 Water Leaks</h3>
+                    <p>AC leaking water? We clear condensate drains and fix drainage system issues.</p>
+                </div>
+
+                <div class="card-glass">
+                    <h3 class="mb-4">❌ Won't Turn On</h3>
+                    <p>AC won't start? We diagnose electrical issues, thermostat problems, and control board failures.
+                    </p>
+                </div>
+
+                <div class="card-glass">
+                    <h3 class="mb-4">🌀 Poor Airflow</h3>
+                    <p>Weak air output? We clean ducts, replace filters, and repair blower motors.</p>
+                </div>
+
+                <div class="card-glass">
+                    <h3 class="mb-4">⚠️ Short Cycling</h3>
+                    <p>AC turning on and off frequently? We fix thermostat calibration and compressor issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>Our Simple 4-Step Process</h2>
+                <p class="text-xl" style="color: var(--color-text-muted);">From booking to cool comfort</p>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card text-center">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 36px; color: white;">
+                        1</div>
+                    <h3 class="mb-4">Book Online</h3>
+                    <p>Choose your preferred date and time. Instant confirmation.</p>
+                </div>
+
+                <div class="card text-center">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 36px; color: white;">
+                        2</div>
+                    <h3 class="mb-4">We Diagnose</h3>
+                    <p>Expert technician arrives and identifies the problem.</p>
+                </div>
+
+                <div class="card text-center">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 36px; color: white;">
+                        3</div>
+                    <h3 class="mb-4">Quick Repair</h3>
+                    <p>We fix the issue with quality parts and expert care.</p>
+                </div>
+
+                <div class="card text-center">
+                    <div
+                        style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 36px; color: white;">
+                        4</div>
+                    <h3 class="mb-4">Test & Verify</h3>
+                    <p>We test your AC to ensure it's working perfectly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background: var(--color-bg-light-secondary);">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>AC Service FAQ</h2>
+                <p class="text-xl" style="color: var(--color-text-muted);">Common questions about AC repair</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does AC repair take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Most AC repairs are completed in 1-2 hours. Complex issues like compressor replacement may
+                            take 3-4 hours. We'll give you an accurate time estimate after diagnosis.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you service all AC brands?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes! We service all major brands including Carrier, Trane, Lennox, Rheem, Goodman, York,
+                            Mitsubishi, Daikin, LG, Samsung, and more.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How often should I service my AC?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We recommend professional AC maintenance twice a year - once before summer and once before
+                            winter. Regular maintenance prevents breakdowns and extends AC lifespan.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if my AC is still under warranty?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We can work with your manufacturer's warranty. Bring your warranty paperwork, and we'll help
+                            you navigate the warranty claim process for covered repairs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark">
+        <div class="container text-center">
+            <h2 class="mb-6">Ready to Fix Your AC?</h2>
+            <p class="text-xl mb-8">Expert technicians, same-day service, 90-day warranty</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary btn-lg" id="bookNowFooter">Book Service Now</button>
+                <a href="tel:+1234567890" class="btn btn-outline btn-lg" style="border-color: white; color: white;">📞
+                    Call: +91 7311100318</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🔧 HomeFix Pro</h3>
+                    <p style="color: var(--color-text-muted);">Your trusted partner for professional appliance repair
+                        services.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="service-ac.html">AC Repair</a></li>
+                        <li><a href="service-washing-machine.html">Washing Machine</a></li>
+                        <li><a href="service-refrigerator.html">Refrigerator</a></li>
+                        <li><a href="service-tv.html">TV Repair</a></li>
+                        <li><a href="service-microwave.html">Microwave</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#why-us">Why Us</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>📞 +91 7311100318</li>
+                        <li>📧 info@homefixpro.com</li>
+                        <li>📍 Prayagraj, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HomeFix Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal (same as homepage) -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+
+            <h2 class="mb-6">Book AC Service</h2>
+
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label class="form-label">Your Name *</label>
+                    <input type="text" class="form-input" id="name" required placeholder="John Doe">
+                    <div class="form-error" id="nameError">Please enter your name</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Phone Number *</label>
+                    <input type="tel" class="form-input" id="phone" required placeholder="+91 7311100318">
+                    <div class="form-error" id="phoneError">Please enter a valid phone number</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email *</label>
+                    <input type="email" class="form-input" id="email" required placeholder="john@example.com">
+                    <div class="form-error" id="emailError">Please enter a valid email</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Service Needed *</label>
+                    <select class="form-select" id="service" required>
+                        <option value="ac" selected>AC Repair & Installation</option>
+                        <option value="washing-machine">Washing Machine Service</option>
+                        <option value="refrigerator">Refrigerator Repair</option>
+                        <option value="tv">TV Repair</option>
+                        <option value="microwave">Microwave Repair</option>
+                        <option value="other">Other Electronics</option>
+                    </select>
+                    <div class="form-error" id="serviceError">Please select a service</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Preferred Date *</label>
+                    <input type="date" class="form-input" id="date" required>
+                    <div class="form-error" id="dateError">Please select a date</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Describe the AC Issue</label>
+                    <textarea class="form-textarea" id="message"
+                        placeholder="e.g., AC not cooling, making noise, leaking water..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Booking</button>
+            </form>
+
+            <div class="text-center mt-6" id="successMessage" style="display: none;">
+                <div style="font-size: 64px; margin-bottom: 16px;">✅</div>
+                <h3>Booking Received!</h3>
+                <p>Thank you! We'll contact you within 30 minutes to confirm your appointment.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Add click handlers for all booking buttons specific to this page
+        document.getElementById('getPricing')?.addEventListener('click', () => {
+            document.getElementById('bookingModal').classList.add('show');
+        });
+    </script>
+</body>
+
+</html>

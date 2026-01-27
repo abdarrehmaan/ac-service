@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Expert refrigerator repair service. All refrigerator and freezer brands. Fast cooling system repairs. Licensed technicians.">
+    <meta name="keywords"
+        content="refrigerator repair, fridge repair, freezer repair, cooling repair, appliance service">
+    <title>Refrigerator Repair Service | HomeFix Pro - Keep Your Food Fresh</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🔧 HomeFix Pro</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><button class="btn btn-primary" id="bookNowHeader">Book Now</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height: 400px;">
+        <div class="container">
+            <div class="hero-content animate-slide-up text-center" style="max-width: 100%;">
+                <div class="badge badge-primary mb-4" style="font-size: 48px;">🧊</div>
+                <h1>Refrigerator Repair</h1>
+                <p class="text-xl">Professional fridge and freezer repair. Keep your food fresh and safe.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" id="bookNowHero">Book Service Now</button>
+                    <a href="tel:+917311100318" class="btn btn-accent btn-lg">📞 Call: +91 7311100318</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <img src="C:/Users/pc/.gemini/antigravity/brain/763925ee-16aa-40b6-86f3-32ce400bda9a/service_refrigerator_1769161525850.png"
+                alt="Refrigerator Repair"
+                style="width: 100%; max-width: 1000px; margin: 0 auto; border-radius: 16px; box-shadow: var(--shadow-xl);">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2>Refrigerator Problems We Fix</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3 class="mb-4">❄️ Not Cooling</h3>
+                    <p>Fridge warm or freezer not freezing? We repair cooling systems, compressors, and thermostats.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">💧 Water Leaks</h3>
+                    <p>Pooling water inside or outside? We fix drain lines, defrost systems, and seals.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">🧊 Ice Maker Issues</h3>
+                    <p>Ice maker not working? We repair water lines, valves, and ice maker modules.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">🔇 Strange Noises</h3>
+                    <p>Buzzing, clicking, or humming sounds? We diagnose and repair compressor and fan issues.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">⚡ High Energy Bills</h3>
+                    <p>Fridge running constantly? We optimize efficiency and fix faulty components.</p>
+                </div>
+                <div class="card">
+                    <h3 class="mb-4">🚪 Door Seal Problems</h3>
+                    <p>Door not sealing properly? We replace gaskets and adjust door alignment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <div class="container text-center">
+            <h2 class="mb-6">Emergency Refrigerator Service</h2>
+            <p class="text-xl mb-8">Don't risk spoiled food! Same-day repairs available</p>
+            <button class="btn btn-primary btn-lg" id="bookNowFooter">Book Emergency Service</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 HomeFix Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 class="mb-6">Book Refrigerator Service</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label class="form-label">Your Name *</label>
+                    <input type="text" class="form-input" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Phone *</label>
+                    <input type="tel" class="form-input" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email *</label>
+                    <input type="email" class="form-input" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Preferred Date *</label>
+                    <input type="date" class="form-input" id="date" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-textarea" id="message" placeholder="Describe the issue..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Booking</button>
+            </form>
+            <div class="text-center mt-6" id="successMessage" style="display: none;">
+                <div style="font-size: 64px;">✅</div>
+                <h3>Booking Received!</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
